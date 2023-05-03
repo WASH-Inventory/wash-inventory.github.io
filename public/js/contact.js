@@ -21,8 +21,8 @@ inputs.forEach((input) => {
 
 ///////////////////////
 
-const serviceID = window.serviceID;
-const templateID = window.templateID;
+const serviceID = ${{ vars.serviceID }};
+const templateID = ${{ vars.templateID }};
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
