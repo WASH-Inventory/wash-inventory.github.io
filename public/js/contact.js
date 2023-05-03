@@ -1,7 +1,6 @@
 const inputs = document.querySelectorAll(".input");
 var btn = document.getElementById('btn');
-const serviceID = process.env.serviceID;
-const templateID = process.env.templateID;
+
 
 function focusFunc() {
   let parent = this.parentNode;
@@ -22,6 +21,8 @@ inputs.forEach((input) => {
 
 ///////////////////////
 
+const serviceID = process.env.serviceID;
+const templateID = process.env.templateID;
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
