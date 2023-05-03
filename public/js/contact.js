@@ -21,8 +21,6 @@ inputs.forEach((input) => {
 
 ///////////////////////
 
-const serviceID = ${{ vars.serviceID }};
-const templateID = ${{ vars.templateID }};
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
@@ -35,7 +33,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send';
-      alert("📧Message Adressed Succesfully !!!📧");
+      alert("📧 Message Adressed Succesfully !!! 📧");
     }, (err) => {
       btn.value = 'Send';
       alert(JSON.stringify(err));
