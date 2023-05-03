@@ -1,5 +1,8 @@
 const inputs = document.querySelectorAll(".input");
-var btn = document.getElementById('btn')
+var btn = document.getElementById('btn');
+const serviceID = process.env.serviceID;
+const templateID = process.env.templateID;
+
 function focusFunc() {
   let parent = this.parentNode;
   parent.classList.add("focus");
@@ -25,8 +28,8 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = process.env.serviceID;
-   const templateID = process.env.templateID;
+   const serviceID = serviceID;
+   const templateID = templateID;
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
