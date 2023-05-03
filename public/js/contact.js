@@ -21,8 +21,8 @@ inputs.forEach((input) => {
 
 ///////////////////////
 
-const serviceID = process.env.serviceID;
-const templateID = process.env.templateID;
+const serviceID = window.serviceID;
+const templateID = window.templateID;
 document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
