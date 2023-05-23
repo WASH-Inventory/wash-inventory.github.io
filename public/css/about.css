@@ -398,7 +398,6 @@ header.embed .nav-bar{
     padding-bottom: 25px;
     font-family: quick;
     text-align: justify;
-    border-bottom: 2px solid var(--line-color);
 }
 
 .about-info .proffesional-list{
