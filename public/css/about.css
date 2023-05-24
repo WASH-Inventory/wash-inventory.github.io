@@ -368,6 +368,7 @@ header.embed .nav-bar{
     max-width: 100%;
     min-width: 200px;
     margin-right: 110px;
+    margin-bottom: 110px;
 }
 
 .about-info .description{
@@ -378,6 +379,13 @@ header.embed .nav-bar{
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 10px;
+}
+
+.about-info .description h6{
+    font-family: orator std;
+    font-size: 0.8em;
+    margin-left: 410px;
+    margin-top: -40px;
 }
 
 .about-info .description h4{
@@ -398,7 +406,17 @@ header.embed .nav-bar{
     padding-bottom: 25px;
     font-family: quick;
     text-align: justify;
+    
 }
+
+.about-info .description img {
+    height: 40px;
+    width: 40px;
+    margin-left: 500px;
+    margin-top: 100px;
+
+}
+
 
 .about-info .proffesional-list{
     display: flex;
@@ -998,5 +1016,13 @@ footer p {
         padding-right: 0px;
         margin-left: 0px;
         margin-right: 0px;
+    }
+    .about-info .description img {
+        display: none;
+    
+    }
+    .about-info .description h6 {
+        display: none;
+    
     }
 }
